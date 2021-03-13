@@ -1,3 +1,18 @@
-#readme p{
+#readme {
   font-size: 16pt;
 }
+
+#readme h1{
+	color: coral;
+}
+#readme a{
+	color: deepskyblue;
+}
+#readme a:hover{
+	color: dodgerblue;
+}
+
+#readme code{
+	color: cornsilk;
+}
+

@@ -50,17 +50,17 @@ For more information see the [Wiki](https://github.com/samueldonovan1701/SharpTr
 
 # Resources
 
-Project Website: http://samueldonovan1701.github.io/SharpTrends/
+Project Website: [http://samueldonovan1701.github.io/SharpTrends/](http://samueldonovan1701.github.io/SharpTrends/)
 
-Github: https://github.com/samueldonovan1701/SharpTrends
+Github: [https://github.com/samueldonovan1701/SharpTrends](https://github.com/samueldonovan1701/SharpTrends)
 
-Wiki: https://github.com/samueldonovan1701/SharpTrends/wiki
+Wiki: [https://github.com/samueldonovan1701/SharpTrends/wiki](https://github.com/samueldonovan1701/SharpTrends/wiki)
 
-Report a bug: https://github.com/samueldonovan1701/SharpTrends/issues
+Report a bug: [https://github.com/samueldonovan1701/SharpTrends/issues](https://github.com/samueldonovan1701/SharpTrends/issues)
 
-Discuss: https://github.com/samueldonovan1701/SharpTrends/discussions
+Discuss: [https://github.com/samueldonovan1701/SharpTrends/discussions](https://github.com/samueldonovan1701/SharpTrends/discussions)
 
-NuGet: https://www.nuget.org/packages/SharpTrends/
+NuGet: [https://www.nuget.org/packages/SharpTrends/](https://www.nuget.org/packages/SharpTrends/)
 
 
 # License
@@ -71,7 +71,7 @@ Samuel S. Donovan
 
 samuel.donovan1701@gmail.com
 
-https://github.com/samueldonovan1701
+[https://github.com/samueldonovan1701](https://github.com/samueldonovan1701)
 
 
 # TODO

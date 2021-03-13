@@ -1,26 +1,30 @@
 html, body {
-  height: 100%;
-  background-color: #45525D;
-  color: white;
+  height: auto;
+  background-color: darkslategray;
+  color: floralwhite;
   margin: 0;
 }
 
 #header {
-  height: 3em;
+  top: 0;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+
   border-bottom: solid black 2px;
-  text-align: center;
+  background-color: inherit;
+
   vertical-align: text-bottom;
   font-size: 1.5em;
-  position: fixed;
-  width: 100%;
-  background-color: #45525D;
-  z-index: 1;
   padding-bottom: 0.5em;
 }
 
 .header-corslinks{
-  position:fixed;
-  width: 10em;
+  position: absolute;
+  margin-left: 1em;
+  width: 8em;
   height: 3em;
 }
 .header-corslinks img{
@@ -31,20 +35,27 @@ html, body {
   background-color: lightgray;
 }
 
-.header-spacer {
-  height: 1.8em;
-}
-
 .header-text {
-  height: 1em;
-  right: 0;
+  display:inline-block;
+  
+  text-align: center;
+  box-sizing: border-box;
+
+  width: calc(100vw - 10em);
+  padding-left: 10em;
+  padding-top: 2em;
 }
 
 .hyperlink {
-  color: white;
+  color: deepskyblue;
 }
 .hyperlink:hover {
-  color: lightgray;
+  color: dodgerblue;
+}
+
+#body{
+  top: 6em;
+  width: 100%;
 }
 
 .text-input{
@@ -52,14 +63,6 @@ html, body {
   width: 90%;
   margin: 1em 5%;
   color: #6C3108;
-}
-
-
-
-#body{
-  position: absolute;
-  top: 6em;
-  width: 100%;
 }
 
 .data-table{
@@ -72,6 +75,7 @@ html, body {
 th{
   text-align:left;
   padding-bottom: 0.5em;
+  color: coral;
 }
 
 td {
