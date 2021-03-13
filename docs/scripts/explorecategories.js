@@ -49,7 +49,7 @@ function setTableData(data)
 }
 
 $(document).ready(()=>{
-	$.get({url: "http://trends.google.com/trends/api/explore/pickers/category?hl=en-GB&tz=0", dataType: "text"})
+	$.get({url: "https://trends.google.com/trends/api/explore/pickers/category?hl=en-GB&tz=0", dataType: "text"})
 	.done((text) => {
     	text = text.substring(5);
     	var data = JSON.parse(text);
