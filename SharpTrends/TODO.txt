@@ -1,0 +1,11 @@
+﻿-Widget Examples
+-GeoMapWidget.Resolution
+	-COUNTRY (worldwide only)
+	-REGION  (within country, default)
+	-CITY    (anywhere)
+	-DMA	 (Metro (US only?))
+-Documentation/IntelliSense
+
+NOTES:
+	Possible Reason for HttpException (BadRequest):
+		-Bad MID
