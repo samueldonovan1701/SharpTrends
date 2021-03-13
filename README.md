@@ -50,7 +50,7 @@ For more information see the [Wiki](https://github.com/samueldonovan1701/SharpTr
 
 # Resources
 
-Project Website: http://samueldonovan1701.github.io/SharpTrends
+Project Website: http://samueldonovan1701.github.io/SharpTrends/
 
 Github: https://github.com/samueldonovan1701/SharpTrends
 

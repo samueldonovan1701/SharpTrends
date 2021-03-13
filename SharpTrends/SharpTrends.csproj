@@ -8,7 +8,7 @@
 
 Project Website: http://samueldonovan1701.github.io/SharpTrends
 
-
+/
 Github: https://github.com/samueldonovan1701/SharpTrends
 
 
@@ -24,7 +24,7 @@ Discuss: https://github.com/samueldonovan1701/SharpTrends/discussions
 NuGet: https://www.nuget.org/packages/SharpTrends/</Description>
     <Copyright>Copyright (c) 2021 Samuel S. Donovan</Copyright>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl>http://samueldonovan1701.github.io/SharpTrends</PackageProjectUrl>
+    <PackageProjectUrl>http://samueldonovan1701.github.io/SharpTrends/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/samueldonovan1701/SharpTrends</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage>en-GB</NeutralLanguage>
