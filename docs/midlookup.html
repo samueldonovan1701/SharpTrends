@@ -10,6 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="scripts/copy.js"></script>
     <script src="scripts/cors.js" defer></script>
+    <script>
+      $(document).ready(() => {
+      var url = "https://trends.google.com/trends/api/autocomplete/CORStest";
+
+      $.get({url: url, dataType: "text"})
+        .fail(corsPluginNotDetected);
+      });
+    </script>
     <script src="scripts/midlookup.js" defer></script>
   </head>  
   <body>
