@@ -94,12 +94,14 @@ tbody tr:active{
 } 
 
 #copy-notification{
+  z-index: 1;
   position: fixed;
   top: 20px;
   right: 20px;
   width: 5em;
   height: 1.3em;
-  background: SeaGreen;
+  
+  background: seagreen;
   color: white;
   text-align: center;
   font-size: 3em;

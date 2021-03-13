@@ -1,17 +1,17 @@
 function copyToClipboard(text) {
     if (window.clipboardData && window.clipboardData.setData) {
         // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
-        return window.clipboardData.setData("Text", text);
-
+        window.clipboardData.setData("Text", text);
     }
-    else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+    else if (document.queryCommandSupported && document.queryCommandSupported("copy")) 
+    {
         var textarea = document.createElement("textarea");
         textarea.textContent = text;
         textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
         document.body.appendChild(textarea);
         textarea.select();
         try {
-            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+            document.execCommand("copy");  // Security exception may be thrown by some browsers.
         }
         catch (ex) {
             console.warn("Copy to clipboard failed.", ex);
@@ -21,4 +21,8 @@ function copyToClipboard(text) {
             document.body.removeChild(textarea);
         }
     }
+
+    console.log("Copied");
+    $("#copy-notification").removeClass("hide");
+    setTimeout(() => $("#copy-notification").addClass("hide"), 2000);
 }
