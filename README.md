@@ -71,7 +71,7 @@ Samuel S. Donovan
 
 samuel.donovan1701@gmail.com
 
-https://github.com/samueldonovan1701
+[https://github.com/samueldonovan1701](https://github.com/samueldonovan1701)
 
 
 # TODO
