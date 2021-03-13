@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SharpTrends | MID Lookup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/copy.js"></script>
+    <script src="scripts/cors.js" defer></script>
+    <script src="scripts/midlookup.js" defer></script>
+  </head>  
+  <body>
+    <div id="header">
+      <div class="header-corslinks">
+        <span style="text-decoration: underline;">CORS Extensions</span></br>
+        <a href="https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/64px-Google_Chrome_icon_%28September_2014%29.svg.png"></a>
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/68px-Firefox_logo%2C_2019.svg.png"></a>
+      </div>
+      <div class="header-spacer">
+      </div>
+      <div class="header-text">       
+        <span width=90%>
+          <a href="index.html" class="hyperlink">Home</a> | 
+          <a href="midlookup.html" class="hyperlink">MID Lookup</a> | 
+          <a href="explorecategories.html" class="hyperlink">Explore Categories</a> | 
+          <a href="geocodes.html" class="hyperlink">GeoCodes</a> | 
+          <a href="https://github.com/samueldonovan1701/SharpTrends/wiki" class="hyperlink">Wiki</a> |
+          <a href="https://github.com/samueldonovan1701/SharpTrends" class="hyperlink">GitHub</a> |
+          <a href="https://www.nuget.org/packages/SharpTrends/" class="hyperlink">NuGet</a>
+        </span>
+      </div>
+    </div>
+
+    <div id="body">
+      <input type="text" id="input-box" class="text-input" placeholder="Type something to find it's MID" autofocus>
+      <p style="margin: 0; text-align: center;">Left-click: MID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right-click: Topic</p>
+      <table id="mid-table" class="data-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Type</th>
+            <th>MID</th>
+          </tr>
+        </thead>
+        <tbody oncontextmenu="return false;">
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="copy-notification" class="hide">
+      Copied
+    </div>
+  </body>
+</html>

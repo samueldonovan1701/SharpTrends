@@ -1,0 +1,9 @@
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\bin\Debug\netstandard2.0\SharpTrends.deps.json
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\bin\Debug\netstandard2.0\SharpTrends.dll
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\bin\Debug\netstandard2.0\SharpTrends.pdb
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.csprojAssemblyReference.cache
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.AssemblyInfoInputs.cache
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.AssemblyInfo.cs
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.csproj.CoreCompileInputs.cache
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.dll
+D:\Users\Sam\Downloads\SharpTrends\SharpTrends\obj\Debug\netstandard2.0\SharpTrends.pdb

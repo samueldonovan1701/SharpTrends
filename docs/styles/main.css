@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  background-color: #45525D;
+  color: white;
+  margin: 0;
+}
+
+#header {
+  height: 3em;
+  border-bottom: solid black 2px;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 1.5em;
+  position: fixed;
+  width: 100%;
+  background-color: #45525D;
+  z-index: 1;
+  padding-bottom: 0.5em;
+}
+
+.header-corslinks{
+  position:fixed;
+  width: 10em;
+  height: 3em;
+}
+.header-corslinks img{
+  width: 1.7em;
+  padding: 0.1em 0.5em;
+}
+.header-corslinks img:hover{
+  background-color: lightgray;
+}
+
+.header-spacer {
+  height: 1.8em;
+}
+
+.header-text {
+  height: 1em;
+  right: 0;
+}
+
+.hyperlink {
+  color: white;
+}
+.hyperlink:hover {
+  color: lightgray;
+}
+
+.text-input{
+  font-size: 2.5em;
+  width: 90%;
+  margin: 1em 5%;
+  color: #6C3108;
+}
+
+
+
+#body{
+  position: absolute;
+  top: 6em;
+  width: 100%;
+}
+
+.data-table{
+  width: 90%;
+  margin: 0 5%;
+  border-collapse: collapse;
+  font-size: 2em;
+}
+
+th{
+  text-align:left;
+  padding-bottom: 0.5em;
+}
+
+td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+tbody tr:hover, tbody tb:hover>td{
+  background-color: lightgray;
+  color: black;
+  border: 1px solid black;
+}
+
+tbody tr:active{
+  background-color: white;
+} 
+
+#copy-notification{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 5em;
+  height: 1.3em;
+  background: SeaGreen;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+    
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#copy-notification.hide {
+  opacity: 0;
+}

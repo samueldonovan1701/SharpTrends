@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SharpTrends</id>
+    <version>1.0.0</version>
+    <authors>Samuel Donovan</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>http://samueldonovan1701.github.io/SharpTrends</projectUrl>
+    <description>A .NET Standard API for Google Trends</description>
+    <copyright>Copyright (c) 2021 Samuel S. Donovan</copyright>
+    <repository type="GitHub" url="https://github.com/samueldonovan1701/SharpTrends" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Users\Sam\Downloads\SharpTrends\SharpTrends\bin\Debug\netstandard2.1\SharpTrends.dll" target="lib\netstandard2.1\SharpTrends.dll" />
+    <file src="D:\Users\Sam\Downloads\SharpTrends\LICENSE.txt" target="LICENSE.txt" />
+  </files>
+</package>

@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Samuel Donovan</Authors>
+    <Company />
+    <Description>A .NET Standard 2.1 API for Google Trends
+
+Project Website: http://samueldonovan1701.github.io/SharpTrends
+
+/
+Github: https://github.com/samueldonovan1701/SharpTrends
+
+
+Wiki: https://github.com/samueldonovan1701/SharpTrends/wiki
+
+
+Report a bug: https://github.com/samueldonovan1701/SharpTrends/issues
+
+
+Discuss: https://github.com/samueldonovan1701/SharpTrends/discussions
+
+
+NuGet: https://www.nuget.org/packages/SharpTrends/</Description>
+    <Copyright>Copyright (c) 2021 Samuel S. Donovan</Copyright>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>http://samueldonovan1701.github.io/SharpTrends/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/samueldonovan1701/SharpTrends</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
