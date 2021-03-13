@@ -1,7 +1,7 @@
 html, body {
   height: auto;
-  background-color: #45525D;
-  color: white;
+  background-color: darkslategray;
+  color: floralwhite;
   margin: 0;
 }
 
@@ -14,7 +14,7 @@ html, body {
   z-index: 1;
 
   border-bottom: solid black 2px;
-  background-color: #45525D;
+  background-color: inherit;
 
   vertical-align: text-bottom;
   font-size: 1.5em;
@@ -47,10 +47,10 @@ html, body {
 }
 
 .hyperlink {
-  color: white;
+  color: deepskyblue;
 }
 .hyperlink:hover {
-  color: lightgray;
+  color: dodgerblue;
 }
 
 #body{
@@ -75,6 +75,7 @@ html, body {
 th{
   text-align:left;
   padding-bottom: 0.5em;
+  color: coral;
 }
 
 td {
