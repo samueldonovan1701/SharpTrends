@@ -10,8 +10,7 @@ namespace SharpTrends.Autocomplete
         {
             var qsb = new QueryStringBuilder
             {
-                { "hl", p.Locale.Code },
-                { "tz", -p.TimeZone.UTC_Offset.Minutes }
+                { "hl", p.Locale.Code }
             };
             var qs = qsb.ToString();
 
