@@ -33,7 +33,6 @@ namespace Examples
                 Snippet = "dog"
             };
             p.Locale = Locales.Chinese_PRC;
-            p.TimeZone = TimeZones.Default;
 
             List<Topic> data = client.Autocomplete(p);
 
