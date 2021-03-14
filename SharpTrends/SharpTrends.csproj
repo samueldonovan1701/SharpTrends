@@ -29,7 +29,7 @@ NuGet: https://www.nuget.org/packages/SharpTrends/</Description>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

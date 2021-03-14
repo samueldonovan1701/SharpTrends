@@ -1,4 +1,4 @@
-# SharpTrends
+# SharpTrends v1.0.4
 A .NET Standard 2.1 API for GoogleTrends
 
 # Requirements
