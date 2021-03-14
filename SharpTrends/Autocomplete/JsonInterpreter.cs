@@ -13,10 +13,10 @@ namespace SharpTrends.Autocomplete
 
             foreach (var jsonTopic in jsonObj.Default.Topics)
             {
-                list.Add(new Topic(jsonTopic.Mid)
+                list.Add(new Topic(jsonTopic.Mid ?? String.Empty)
                 {
-                    Name = jsonTopic.Title,
-                    Type = jsonTopic.Type
+                    Name = jsonTopic.Title ?? String.Empty,
+                    Type = jsonTopic.Type ?? String.Empty
                 });
             }
 
