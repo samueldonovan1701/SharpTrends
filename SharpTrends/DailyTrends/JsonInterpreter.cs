@@ -44,6 +44,8 @@ namespace SharpTrends.DailyTrends
 
             //Get unit index
             int unitIndex = str.IndexOfAny(possibleUnits);
+            if (unitIndex == -1)
+                return -1;
 
             //Get unit
             unit = str[unitIndex];
@@ -52,15 +54,21 @@ namespace SharpTrends.DailyTrends
             digits = str.Substring(0, unitIndex);
 
             //Parse digits
-            int quanta = Int32.Parse(digits);
-            var traffic = unit switch
+            try
             {
-                'B' => quanta * Math.Pow(10, 9),
-                'M' => quanta * Math.Pow(10, 6),
-                'K' => quanta * Math.Pow(10, 3),
-                _ => quanta
-            };
-            return traffic;
+                int quanta = Int32.Parse(digits);
+                var traffic = unit switch
+                {
+                    'B' => quanta * Math.Pow(10, 9),
+                    'M' => quanta * Math.Pow(10, 6),
+                    'K' => quanta * Math.Pow(10, 3),
+                    _ => quanta
+                };
+                return traffic;
+            } catch
+            {
+                return -1;
+            }
         }
         private Article _parseArticle(JSON.Article jsonArticle)
         {
@@ -117,7 +125,7 @@ namespace SharpTrends.DailyTrends
             var trend = new TrendingSearch()
             {
                 //Title
-                Title = jsonTrend.Title.Query,
+                Title = jsonTrend.Title.Query ?? String.Empty,
                 //Traffic
                 Traffic = _parseTrafic(jsonTrend.FormattedTraffic),
                 //Image
@@ -143,7 +151,13 @@ namespace SharpTrends.DailyTrends
         }
         private DateTime _parseDate(JSON.TrendingSearchesDay jsonDay)
         {
-            return DateTime.ParseExact(jsonDay.Date, "yyyyMMdd", null);
+            try
+            {
+                return DateTime.ParseExact(jsonDay.Date, "yyyyMMdd", null);
+            } catch
+            {
+                return DateTime.MinValue;
+            }
         }
 
         public List<TrendingSearch> Interpret(string json)
