@@ -10,10 +10,8 @@ namespace SharpTrends.YearInSearch
         {
             var qsb = new QueryStringBuilder();
             qsb.Add("hl", p.Locale.Code);
-            qsb.Add("tz", -p.TimeZone.UTC_Offset.Minutes);
             qsb.Add("date", p.Year);
             qsb.Add("geo", p.GeoCode.ID);
-            qsb.Add("isMobile", false);
 
             var qs = qsb.ToString();
 

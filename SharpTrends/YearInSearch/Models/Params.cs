@@ -8,18 +8,14 @@ namespace SharpTrends.YearInSearch
     public class YearInSearchParams
     {
         public Locale Locale;
-        public TimeZone TimeZone;
-        public int Year;
         public GeoCode GeoCode;
-        public bool isMobile;
+        public int Year;
 
         public YearInSearchParams()
         {
             this.Locale = Locales.Default;
-            this.TimeZone = TimeZones.Default;
             this.Year = DateTime.Now.Year - 1;
             this.GeoCode = GeoCodes.Default;
-            this.isMobile = false;
         }
     }
 }
