@@ -14,9 +14,6 @@ function tieOnCopyOnClick()
       var type = element.children[1].innerText;
       var mid = element.children[2].innerText;
       copyToClipboard("new Topic(\""+mid+"\", \""+name+"\", \""+type+"\");");
-      
-      $("#copy-notification").removeClass("hide");
-      setTimeout(() => $("#copy-notification").addClass("hide"), 2000);
     });
   });
 }
