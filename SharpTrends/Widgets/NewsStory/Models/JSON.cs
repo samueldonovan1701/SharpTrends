@@ -7,7 +7,6 @@ namespace SharpTrends.Widgets
 {
     internal static class StoryJSON
     {
-        // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
         public class Article
         {
             [JsonProperty("imageUrl")]
@@ -119,7 +118,7 @@ namespace SharpTrends.Widgets
             public bool IsCurated { get; set; }
 
             [JsonProperty("request")]
-            public string Request { get; set; }
+            public Request Request { get; set; }
 
             [JsonProperty("barData")]
             public List<BarData> BarData { get; set; }

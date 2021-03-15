@@ -137,7 +137,7 @@ namespace SharpTrends.Widgets
                 story.Timeseries = new TimeseriesWidget()
                 {
                     Token = jsonObj.Widgets[i].Token,
-                    Request = jsonObj.Widgets[i].Request
+                    Request = JsonConvert.SerializeObject(jsonObj.Widgets[i].Request)
                 };
             }
 
@@ -148,7 +148,7 @@ namespace SharpTrends.Widgets
                 story.GeoMap = new GeoMapWidget()
                 {
                     Token = jsonObj.Widgets[i].Token,
-                    Request = jsonObj.Widgets[i].Request
+                    Request = JsonConvert.SerializeObject(jsonObj.Widgets[i].Request)
                 };
             }
 
@@ -159,7 +159,7 @@ namespace SharpTrends.Widgets
                 story.RelatedTopics = new RelatedTopicsWidget()
                 {
                     Token = jsonObj.Widgets[i].Token,
-                    Request = jsonObj.Widgets[i].Request
+                    Request = JsonConvert.SerializeObject(jsonObj.Widgets[i].Request)
                 };
             }
 
@@ -170,7 +170,7 @@ namespace SharpTrends.Widgets
                 story.RelatedQueries = new RelatedQueriesWidget()
                 {
                     Token = jsonObj.Widgets[i].Token,
-                    Request = jsonObj.Widgets[i].Request
+                    Request = JsonConvert.SerializeObject(jsonObj.Widgets[i].Request)
                 };
             }
         }
