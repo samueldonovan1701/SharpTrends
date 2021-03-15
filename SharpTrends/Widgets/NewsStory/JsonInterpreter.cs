@@ -61,19 +61,26 @@ namespace SharpTrends.Widgets
             if (i == -1)
                 return list;
 
-            foreach(var jsonArticle in jsonObj.Widgets[i].Articles)
+            foreach (var jsonArticle in jsonObj.Widgets[i].Articles)
             {
-                list.Add(new Article()
+                var article = new Article()
                 {
                     Title = jsonArticle.Title,
                     TimeAgo = _parseTimeAgo(jsonArticle.Time),
                     Uri = new Uri(jsonArticle.Url),
                     SourceName = jsonArticle.Source,
-                    Image = new Image()
+
+                };
+
+                if (!String.IsNullOrEmpty(jsonArticle.ImageUrl))
+                {
+                    article.Image = new Image()
                     {
                         Uri = new Uri(jsonArticle.ImageUrl)
-                    }
-                });
+                    };
+                }
+
+                list.Add(article);
             }
 
             return list;
