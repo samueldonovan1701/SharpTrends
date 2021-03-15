@@ -8,7 +8,7 @@ namespace SharpTrends.DailyTrends
     {
         private TimeSpan _parseTimeAgo(string str)
         {
-            char[] possibleUnits = { 'w', 'd', 'h', 'm', 's', ' ' };
+            char[] possibleUnits = { 'y', 'w', 'd', 'h', 'm', 's' };
             char unit;
             string digits;
 
@@ -25,6 +25,7 @@ namespace SharpTrends.DailyTrends
             int quanta = -Int32.Parse(digits);
             var ts = unit switch
             {
+                'y' => (DateTime.Now.AddYears(quanta) - DateTime.Now),
                 'w' => TimeSpan.FromDays(quanta * 7),
                 'd' => TimeSpan.FromDays(quanta),
                 'h' => TimeSpan.FromHours(quanta),

@@ -8,9 +8,7 @@ namespace SharpTrends.Widgets
     {
         private TimeSpan _parseTimeAgo(string str)
         {
-            //Example string: "12h ago"
-            TimeSpan ts;
-            char[] possibleUnits = { 'w', 'd', 'h', 'm', 's', ' ' };
+            char[] possibleUnits = {'y', 'w', 'd', 'h', 'm', 's' };
             char unit;
             string digits;
 
@@ -21,34 +19,20 @@ namespace SharpTrends.Widgets
             unit = str[unitIndex];
 
             //Get digit substring
-            digits = str.Substring(0, unitIndex-1);
+            digits = str.Substring(0, unitIndex);
 
             //Parse digits & Invert (time ago)
             int quanta = -Int32.Parse(digits);
-
-            //Scale based on unit
-            switch (unit)
+            var ts = unit switch
             {
-                case 'w':
-                    ts = TimeSpan.FromDays(quanta * 7);
-                    break;
-                case 'd':
-                    ts = TimeSpan.FromDays(quanta);
-                    break;
-                case 'h':
-                    ts = TimeSpan.FromHours(quanta);
-                    break;
-                case 'm':
-                    ts = TimeSpan.FromMinutes(quanta);
-                    break;
-                case 's':
-                    ts = TimeSpan.FromSeconds(quanta);
-                    break;
-                default:
-                    ts = new TimeSpan();
-                    break;
-            }
-
+                'y' => (DateTime.Now.AddYears(quanta) - DateTime.Now),
+                'w' => TimeSpan.FromDays(quanta * 7),
+                'd' => TimeSpan.FromDays(quanta),
+                'h' => TimeSpan.FromHours(quanta),
+                'm' => TimeSpan.FromMinutes(quanta),
+                's' => TimeSpan.FromSeconds(quanta),
+                _ => new TimeSpan()
+            };
             return ts;
         }
         private DateTime _parseDateTime(int timestamp)
