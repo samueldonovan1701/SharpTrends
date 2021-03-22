@@ -1,5 +1,5 @@
 # SharpTrends v1.0.4
-A .NET Standard 2.1 API for GoogleTrends
+A Google Trends API for .NET Standard 2.1 
 
 # Requirements
 Built on .NET Standard 2.1, this library is able to be used cross-platform. 
